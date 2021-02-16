@@ -1,0 +1,13 @@
+.details {
+  padding: 10px;
+  background: #EEEEEE;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr ;
+  align-items: center;
+  grid-gap: 5px;
+}
+

@@ -1,0 +1,9 @@
+h2 {
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.messages {
+  font-family: "Courier New", Monospaced, monospace;
+}
