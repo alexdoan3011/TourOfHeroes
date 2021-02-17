@@ -82,3 +82,7 @@ app-top-bar h3 {
   color: gray;
   margin: 0;
 }
+
+app-messages {
+  margin-top: 50px;
+}
