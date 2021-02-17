@@ -1,9 +1,13 @@
 <div class="details" *ngIf="hero">
   <h2>{{hero.name | uppercase}} Details</h2>
   <div class="grid">
-    <span class="label" style="grid-column: 1; grid-row: 1">id:</span><span style="grid-column: 2; grid-row: 1">{{hero.id}}</span>
+    <span class="label" style="grid-column: 1; grid-row: 1">id:</span><span
+    style="grid-column: 2; grid-row: 1">{{hero.id}}</span>
     <label for="name" class="label" style="grid-column: 1; grid-row: 2">name:</label>
     <input id="name" [(ngModel)]="hero.name" placeholder="name" style="grid-column: 2; grid-row: 2"/>
-    <button (click)="goBack()">go back</button>
+    <div>
+      <button (click)="save()">save</button>
+      <button (click)="goBack()">go back</button>
+    </div>
   </div>
 </div>

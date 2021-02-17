@@ -7,8 +7,22 @@
 
 .grid {
   display: grid;
-  grid-template-columns: auto 1fr ;
+  grid-template-columns: auto 1fr;
   align-items: center;
   grid-gap: 5px;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: #1976d2;
+  outline: none;
+}
+
+button:hover {
+  opacity: 80%;
 }
 

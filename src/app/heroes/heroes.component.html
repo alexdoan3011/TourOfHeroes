@@ -1,9 +1,24 @@
 <h3>My Heroes</h3>
+<!-- (click) passes input value to add() and then clears the input -->
+<div class="flex">
+  <label>Hero name:
+    <input #heroName/>
+  </label>
+  <button (click)="add(heroName.value); heroName.value=''">add</button>
+</div>
+
 <div class="container-heroes">
   <ul>
     <li *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
-        <span class="id">{{hero.id}}</span> <span class="name">{{hero.name}}</span>
+      <span class="id">{{hero.id}}</span> <span class="name">{{hero.name}}</span>
+      <div (click)="delete(hero)" class="delete" id="mdiv">
+        <div class="mdiv">
+          <div class="md"></div>
+        </div>
+      </div>
     </li>
   </ul>
 </div>
+
+
 
